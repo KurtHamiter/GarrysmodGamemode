@@ -1,0 +1,241 @@
+// scania_h, created by TheDanishMaster in 10/22/11 02:46:35, using Vehicle Controller (VCMod).
+
+"Vehicle"
+{
+	"WheelsPerAxle"		"2"
+	"Body"
+	{
+		"CounterTorqueFactor"	"2"
+		"MassCenterOverride"	"0 0 20"
+		"MassOverride"			"12000"
+		"AddGravity"			"1"
+		"MaxAngularVelocity"	"300"
+	}
+	"Engine"
+	{
+		"HorsePower"			"500"
+		"MaxRPM"				"4000"
+		"MaxSpeed"				"55"
+		"MaxReverseSpeed"		"8"
+		"AutobrakeSpeedGain"	"1.1"
+		"AutobrakeSpeedFactor"	"2"
+		"Autotransmission"		"1"
+		"AxleRatio"				"5.2"
+		"Gear"					"3.2"
+
+		"ShiftUpRPM"			"3500"
+		"ShiftDownRPM"			"1000"
+	}
+	"Steering"
+	{
+		"DegreesSlow"						"35"
+		"DegreesFast"						"17"
+		"DegreesBoost"						"10"
+		"SteeringExponent"					"1.4"
+		"SlowCarSpeed"						"10"
+		"FastCarSpeed"						"30"
+		"SlowSteeringRate"					"1.5"
+		"FastSteeringRate"					"0.8"
+		"SteeringRestRateSlow"				"2.5"
+		"SteeringRestRateFast"				"2"
+		"TurnThrottleReduceSlow"			"0.5"
+		"TurnThrottleReduceFast"			"0.5"
+		"BrakeSteeringRateFactor"			"2"
+		"ThrottleSteeringRestRateFactor"	"2"
+		"BoostSteeringRestRateFactor"		"1"
+		"BoostSteeringRateFactor"			"1"
+
+		"PowerSlideAccel"					"120"
+
+		"SkidAllowed"						"1"
+		"DustCloud"							"0"
+	}
+	"Axle"
+	{
+		"Wheel"
+		{
+			"Radius"		"21"
+			"Mass"			"400"
+			"Inertia"		"2"
+			"RotDamping"	"0.2"
+			"Material"		"jeeptire"
+			"SkidMaterial"	"slidingrubbertire"
+			"BrakeMaterial"	"brakingrubbertire"
+		}
+		"Suspension"
+		{
+			"SpringConstant"			"70"
+			"SpringDamping"				"0.5"
+			"StabilizerConstant"		"4"
+			"SpringDampingCompression"	"1"
+			"MaxBodyForce"				"40"
+		}
+		"BrakeFactor"						"1"
+	}
+	"Axle"
+	{
+		"Wheel"
+		{
+			"Radius"		"21"
+			"Mass"			"900"
+			"Inertia"		"2"
+			"RotDamping"	"0.2"
+			"Material"		"jeeptire"
+			"SkidMaterial"	"slidingrubbertire"
+			"BrakeMaterial"	"brakingrubbertire"
+		}
+		"Suspension"
+		{
+			"SpringConstant"			"80"
+			"SpringDamping"				"6"
+			"StabilizerConstant"		"4"
+			"SpringDampingCompression"	"6"
+			"MaxBodyForce"				"100"
+		}
+		"TorqueFactor"						"5"
+		"BrakeFactor"						"0.6"
+	}
+}
+
+"Vehicle_Sounds"
+{
+	"Gear"
+	{
+		"Max_Speed"				"0.05"
+		"Speed_Approach_Factor"	"1"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"0.4"
+		"Speed_Approach_Factor"	"0.07"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"0.88"
+		"Speed_Approach_Factor"	"0.108"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"0.98"
+		"Speed_Approach_Factor"	"0.035"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"1.16"
+		"Speed_Approach_Factor"	"0.015"
+	}
+	"State"
+	{
+		"Name"		"ss_start_idle"
+		"Sound"		"tdmtruck_start"
+		"Min_Time"	"2.5"
+	}
+	"State"
+	{
+		"Name"		"ss_gear_0"
+		"Sound"		"tdmtruck_rev"
+		"Min_Time"	"0.75"
+	}
+	"State"
+	{
+		"Name"		"ss_gear_1_resume"
+		"Sound"		"tdmtruck_first_noshift"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"ss_gear_3_resume"
+		"Sound"		"tdmtruck_third_noshift"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"ss_gear_3"
+		"Sound"		"tdmtruck_third"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"ss_gear_2"
+		"Sound"		"tdmtruck_second"
+		"Min_Time"	"1.25"
+	}
+	"State"
+	{
+		"Name"		"ss_gear_1"
+		"Sound"		"tdmtruck_first"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"ss_idle"
+		"Sound"		"tdmtruck_idle"
+	}
+	"State"
+	{
+		"Name"		"ss_reverse"
+		"Sound"		"tdmtruck_rev"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"ss_gear_2_resume"
+		"Sound"		"tdmtruck_second_noshift"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"ss_gear_4_resume"
+		"Sound"		"tdmtruck_fourth_noshift"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"ss_slowdown"
+		"Sound"		"tdmtruck_rev"
+	}
+	"State"
+	{
+		"Name"		"ss_start_water"
+		"Sound"		"tdmtruck_stop"
+	}
+	"State"
+	{
+		"Name"		"ss_gear_0_resume"
+		"Sound"		"tdmtruck_idle"
+		"Min_Time"	"0.75"
+	}
+	"State"
+	{
+		"Name"		"ss_shutdown_water"
+		"Sound"		"tdmtruck_stop"
+	}
+	"State"
+	{
+		"Name"		"ss_gear_4"
+		"Sound"		"tdmtruck_fourth"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"ss_slowdown_highspeed"
+		"Sound"		"tdmtruck_throttleoff"
+	}
+	"CrashSound"
+	{
+		"Min_Speed"			"350"
+		"Min_Speed_Change"	"250"
+		"Sound"				"atv_impact_medium"
+		"Gear_Limit"		"1"
+	}
+	"CrashSound"
+	{
+		"Min_Speed"			"450"
+		"Min_Speed_Change"	"350"
+		"Sound"				"atv_impact_heavy"
+	}
+
+	"Skid_LowFriction"		"tdmtruck_skid_highfriction"
+	"Skid_NormalFriction"	"tdmtruck_skid_highfriction"
+	"Skid_HighFriction"		"tdmtruck_skid_highfriction"
+}
