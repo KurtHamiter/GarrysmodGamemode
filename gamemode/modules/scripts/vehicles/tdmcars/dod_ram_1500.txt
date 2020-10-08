@@ -1,0 +1,261 @@
+// dod_ram_1500, created by TDM in 08/07/15 12:38:48, using Vehicle Controller (VCMod).
+
+"Vehicle"
+{
+	"WheelsPerAxle"		"2"
+	"Body"
+	{
+		"CounterTorqueFactor"	"0.85"
+		"MassCenterOverride"	"0 0 1"
+		"MassOverride"			"2850"
+		"AddGravity"			"0.3"
+		"MaxAngularVelocity"	"450"
+	}
+	"Engine"
+	{
+		"HorsePower"			"310"
+		"MaxRPM"				"5650"
+		"MaxSpeed"				"64"
+		"MaxReverseSpeed"		"20"
+		"AutobrakeSpeedGain"	"0"
+		"AutobrakeSpeedFactor"	"0"
+		"Autotransmission"		"0"
+		"AxleRatio"				"7.8"
+		"Gear"					"5"
+		"Gear"					"2.4"
+		"Gear"					"1.5"
+		"Gear"					"1"
+		"Gear"					"0.84"
+
+		"ShiftUpRPM"			"3800"
+		"ShiftDownRPM"			"1600"
+	}
+	"Steering"
+	{
+		"DegreesSlow"						"40"
+		"DegreesFast"						"7"
+		"DegreesBoost"						"11"
+		"FastDampen"						"90"
+		"SteeringExponent"					"1"
+		"SlowCarSpeed"						"2"
+		"FastCarSpeed"						"60"
+		"SlowSteeringRate"					"2.2"
+		"FastSteeringRate"					"1.5"
+		"SteeringRestRateSlow"				"2.2"
+		"SteeringRestRateFast"				"1.5"
+		"TurnThrottleReduceSlow"			"0.01"
+		"TurnThrottleReduceFast"			"0.6"
+		"BrakeSteeringRateFactor"			"1"
+		"ThrottleSteeringRestRateFactor"	"1.5"
+		"BoostSteeringRestRateFactor"		"1.5"
+		"BoostSteeringRateFactor"			"1.5"
+
+		"PowerSlideAccel"					"190"
+
+		"SkidAllowed"						"1"
+		"DustCloud"							"1"
+	}
+	"Axle"
+	{
+		"Wheel"
+		{
+			"Radius"						"20.3"
+			"Mass"							"420"
+			"Inertia"						"-4"
+			"Damping"						"0"
+			"RotDamping"					"0"
+			"Material"						"jeeptire"
+			"SkidMaterial"					"slidingrubbertire"
+			"BrakeMaterial"					"brakingrubbertire"
+		}
+		"Suspension"
+		{
+			"SpringConstant"				"35"
+			"SpringDamping"					"0.5"
+			"StabilizerConstant"			"0"
+			"SpringDampingCompression"		"3"
+			"MaxBodyForce"					"1000"
+		}
+		"TorqueFactor"						"0.05"
+		"BrakeFactor"						"0.65"
+	}
+	"Axle"
+	{
+		"Wheel"
+		{
+			"Radius"						"20.3"
+			"Mass"							"310"
+			"Inertia"						"-3"
+			"Damping"						"0"
+			"RotDamping"					"7"
+			"Material"						"jeeptire"
+			"SkidMaterial"					"slidingrubbertire"
+			"BrakeMaterial"					"brakingrubbertire"
+		}
+		"Suspension"
+		{
+			"SpringConstant"				"53"
+			"SpringDamping"					"0.5"
+			"StabilizerConstant"			"0"
+			"SpringDampingCompression"		"3"
+			"MaxBodyForce"					"1500"
+		}
+		"TorqueFactor"						"1.7"
+		"BrakeFactor"						"0.5"
+	}
+}
+
+"Vehicle_Sounds"
+{
+	"Gear"
+	{
+		"Max_Speed"				"0.06"
+		"Speed_Approach_Factor"	"1"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"0.45"
+		"Speed_Approach_Factor"	"0.08"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"0.76"
+		"Speed_Approach_Factor"	"0.05"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"0.91"
+		"Speed_Approach_Factor"	"0.035"
+	}
+	"Gear"
+	{
+		"Max_Speed"				"1"
+		"Speed_Approach_Factor"	"0.01"
+	}
+	"State"
+	{
+		"Name"		"SS_SHUTDOWN_WATER"
+		"Sound"		"atv_stall_in_water"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_2_RESUME"
+		"Sound"		"vehicles\tdmcars\dod_ram_1500\second.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_START_WATER"
+		"Sound"		"atv_start_in_water"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_3_RESUME"
+		"Sound"		"vehicles\tdmcars\dod_ram_1500\third.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_REVERSE"
+		"Sound"		"vehicles\tdmcars\dod_ram_1500\rev.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_IDLE"
+		"Sound"		"vehicles\tdmcars\dod_ram_1500\idle.wav"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_1_RESUME"
+		"Sound"		"vehicles\tdmcars\dod_ram_1500\first.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_4"
+		"Sound"		"vehicles\tdmcars\dod_ram_1500\fourth_cruise.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_1"
+		"Sound"		"vehicles\tdmcars\dod_ram_1500\first.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_SLOWDOWN_HIGHSPEED"
+		"Sound"		"vehicles\tdmcars\dod_ram_1500\throttle_off.wav"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_SHUTDOWN"
+		"Sound"		"vehicles\tdmcars\slsamg\engineoff.mp3"
+		"Min_Time"	"0"
+	}
+	"State"
+	{
+		"Name"		"SS_START_IDLE"
+		"Sound"		"vehicles\tdmcars\skyliner34\enginestart.mp3"
+		"Min_Time"	"0.7"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_4_RESUME"
+		"Sound"		"vehicles\tdmcars\dod_ram_1500\fourth_cruise.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_3"
+		"Sound"		"vehicles\tdmcars\dod_ram_1500\third.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_0_RESUME"
+		"Sound"		"vehicles\tdmcars\dod_ram_1500\first.wav"
+		"Min_Time"	"0.75"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_0"
+		"Sound"		"vehicles\tdmcars\dod_ram_1500\idle.wav"
+		"Min_Time"	"0.08"
+	}
+	"State"
+	{
+		"Name"		"SS_GEAR_2"
+		"Sound"		"vehicles\tdmcars\dod_ram_1500\second.wav"
+		"Min_Time"	"0.5"
+	}
+	"State"
+	{
+		"Name"		"SS_SLOWDOWN"
+		"Sound"		"vehicles\tdmcars\dod_ram_1500\idle.wav"
+		"Min_Time"	"0"
+	}
+	"CrashSound"
+	{
+		"Min_Speed"			"350"
+		"Min_Speed_Change"	"250"
+		"Sound"				"atv_impact_medium"
+		"Gear_Limit"		"1"
+	}
+	"CrashSound"
+	{
+		"Min_Speed"			"450"
+		"Min_Speed_Change"	"350"
+		"Sound"				"atv_impact_heavy"
+		"Gear_Limit"		"0"
+	}
+
+	"Skid_LowFriction"		""
+	"Skid_NormalFriction"	""
+	"Skid_HighFriction"		""
+}
