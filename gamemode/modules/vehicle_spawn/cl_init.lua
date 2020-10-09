@@ -6,8 +6,6 @@ net.Receive( "ownedVehicles", function( len, ply )
 
 	local owned_vehicles = net.ReadTable()
 	
-	print("VEHICLE SHOP111")
-	
 	PrintTable(owned_vehicles)
 	
 	print(table.maxn(owned_vehicles))--
@@ -92,7 +90,6 @@ net.Receive( "platePos", function( len, ply )
 
 carEntity = net.ReadString()
 
-print("SPAWNED VEHICLES")
 spawnedVehicles = net.ReadTable()
 
 PrintTable(spawnedVehicles)
@@ -114,7 +111,7 @@ end)
 
 
 
-hook.Add("PostDrawOpaqueRenderables", "exampawdawdawdle", function()
+hook.Add("PostDrawOpaqueRenderables", "DrawLicensePlates", function()
 
 --timer.Simple( 0.25, function()
 	if (spawnedVehicles != nil) then 

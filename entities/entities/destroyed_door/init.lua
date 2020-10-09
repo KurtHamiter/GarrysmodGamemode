@@ -7,9 +7,9 @@ include('shared.lua')
  
 function ENT:Initialize()
  
-	self:PhysicsInit( SOLID_VPHYSICS )      -- Make us work with physics,
-	self:SetMoveType( MOVETYPE_VPHYSICS )   -- after all, gmod is a physics
-	self:SetSolid( SOLID_VPHYSICS )         -- Toolbox
+	self:PhysicsInit( SOLID_VPHYSICS )     
+	self:SetMoveType( MOVETYPE_VPHYSICS ) 
+	self:SetSolid( SOLID_VPHYSICS )       
 	phys = self:GetPhysicsObject()
 	if (phys:IsValid()) then
 		phys:Wake()

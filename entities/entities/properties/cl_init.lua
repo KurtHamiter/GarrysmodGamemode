@@ -6,7 +6,7 @@ include('shared.lua')
    Remember, the things you render first will be underneath!
 ---------------------------------------------------------]]
 surface.CreateFont( "Realtor", {
-	font = "Arial", --  Use the font-name which is shown to you by your operating system Font Viewer, not the file name
+	font = "Arial", 
 	extended = false,
 	size = 25,
 	weight = 500,
@@ -41,7 +41,7 @@ function ENT:Draw()
 		surface.SetDrawColor( 255, 255, 255, 255 )
 		surface.DrawRect( 0, 0, 280, 123 )
 
-		-- Draw some text
+		
 		draw.SimpleText( "Properties", "Realtor", 280 / 2 , 120 / 2 , color_black, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER )
 	cam.End3D2D()
 

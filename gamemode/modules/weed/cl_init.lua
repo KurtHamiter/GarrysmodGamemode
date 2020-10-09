@@ -6,7 +6,7 @@ net.Receive( "sendWeed", function()
 	
 end )   
 
-hook.Add("HUDPaint", "HelloThereawdawdawd", function() 
+hook.Add("HUDPaint", "WeedPlantHud", function() 
 
 	if (weedInfo != nil) then 
 	

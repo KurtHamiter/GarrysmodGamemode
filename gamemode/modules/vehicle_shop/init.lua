@@ -113,9 +113,6 @@ net.Receive( "buyVehicle", function( len, ply )
 		end
 	end
 	
-	print("CREATED LICENSE PLATE")
-	print(createLicensePlate)
-	
 	--sql.Query("CREATE TABLE owned_vehicles ( owner_ID TEXT , car_name TEXT, car_entity TEXT, plate_num TEXT)" )
 	sql.Query("INSERT INTO owned_vehicles( owner_ID , car_name, car_model, car_script, plate_num ) VALUES( '"..ply:SteamID().."' , '"..vehicleName.."' , '"..vehicleModel.."', '"..vehicleScript.."', '"..createLicensePlate.."' ) ")--
 	

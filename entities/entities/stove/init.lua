@@ -8,9 +8,9 @@ include('shared.lua')
 function ENT:Initialize()
  
 	self:SetModel( "models/props_c17/furniturestove001a.mdl" )
-	self:PhysicsInit( SOLID_VPHYSICS )      -- Make us work with physics,
-	self:SetMoveType( MOVETYPE_VPHYSICS )   -- after all, gmod is a physics
-	self:SetSolid( SOLID_VPHYSICS )         -- Toolbox
+	self:PhysicsInit( SOLID_VPHYSICS )     
+	self:SetMoveType( MOVETYPE_VPHYSICS )   
+	self:SetSolid( SOLID_VPHYSICS )         
 	local phys = self:GetPhysicsObject()
 	if (phys:IsValid()) then
 		phys:Wake()
@@ -38,7 +38,7 @@ end
  
 function ENT:Think()
    
-  --self:SetAngles(Angle(0 ,0 ,0 ))
+ 
 	
 end
 

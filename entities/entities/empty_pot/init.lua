@@ -59,7 +59,6 @@ function ENT:Touch(entity)
 		
 		weedGrow[self]['ent'] = ents.Create("planted_weed")
 		weedGrow[self]['ent']:SetPos( self:GetPos() + (self:GetUp() * 25 + Vector(0, 0, 0) )) -- Check last vector
-		--weedGrow[self]['ent']:SetModelScale( weedGrow[self]['ent']:GetModelScale() * .05, 0 )
 		weedGrow[self]['ent']:SetAngles( self:GetAngles() )
 		weedGrow[self]['ent']:Spawn()
 		weedGrow[self]['ent']:SetParent( self , 69 )

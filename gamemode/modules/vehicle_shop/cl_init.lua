@@ -4,8 +4,6 @@ net.Receive( "vehicleShop", function()
 
 	local owned_vehicles = net.ReadTable()
 	
-	print("VEHICLE SHOP111")
-	
 	PrintTable(owned_vehicles)
 	
 	print(table.maxn(owned_vehicles))--
